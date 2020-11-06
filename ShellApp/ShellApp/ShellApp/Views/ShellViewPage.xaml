@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:views="clr-namespace:ShellApp.Views" 
+            FlyoutBackgroundColor="White"
+       BackgroundColor="Teal"
+            xmlns:helpers="clr-namespace:ShellApp.Helpers"       
+             x:Class="ShellApp.Views.ShellViewPage">
+
+      <!--  <TabBar>
+            <views:CatsPage Title="People"
+                        IconImageSource="trash.png"/>
+            <views:DogsPage Title="Are"                        
+                        IconImageSource="user.png"/>
+            <views:CatsPage Title="Stupid"                        
+                        IconImageSource="settings.png"/>
+            <views:DogsPage Title="Idiot"                        
+                        IconImageSource="user.png"/>
+        </TabBar>-->
+    <!--<TabBar>
+        <Tab Title="Dog Page" Icon="trash.png">
+            <ShellContent ContentTemplate="{DataTemplate views:DogsPage}"/>
+        </Tab>
+        <Tab Title="Cat Page" Icon="settings.png">
+            <ShellContent ContentTemplate="{DataTemplate views:CatsPage}"/>
+        </Tab>
+    </TabBar>-->
+ 
+    <!--<Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <views:HeaderView/>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>-->
+
+    <Shell.FlyoutHeader>
+        <views:HeaderView/>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Home" Icon="{FontImage FontFamily=FontAwesome,
+        Glyph={x:Static helpers:IconFont.Home},Color=Teal}">
+        <ShellContent ContentTemplate="{DataTemplate views:HomeView}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Profile" Icon="{FontImage FontFamily=FontAwesome,
+        Glyph={x:Static helpers:IconFont.Account},Color=Teal}">
+        <ShellContent ContentTemplate="{DataTemplate views:ProfileView}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Contacts" Icon="{FontImage FontFamily=FontAwesome,
+        Glyph={x:Static helpers:IconFont.Contacts},Color=Teal}">
+        <ShellContent ContentTemplate="{DataTemplate views:ContactsView}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Messages" Icon="{FontImage FontFamily=FontAwesome,
+        Glyph={x:Static helpers:IconFont.Message},Color=Teal}">
+        <ShellContent ContentTemplate="{DataTemplate views:MessageView}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Articles" Icon="{FontImage FontFamily=FontAwesome,
+        Glyph={x:Static helpers:IconFont.NewspaperVariant},Color=Teal}">
+        <ShellContent ContentTemplate="{DataTemplate views:ArticlesView}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="About" Icon="{FontImage FontFamily=FontAwesome,
+        Glyph={x:Static helpers:IconFont.Information},Color=Teal}">
+        <ShellContent ContentTemplate="{DataTemplate views:AboutView}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="FAQ" Icon="{FontImage FontFamily=FontAwesome,
+        Glyph={x:Static helpers:IconFont.AccountQuestion},Color=Teal}">
+        <ShellContent ContentTemplate="{DataTemplate views:FAQView}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Settings" Icon="{FontImage FontFamily=FontAwesome,
+        Glyph={x:Static helpers:IconFont.Tools},Color=Teal}">
+        <ShellContent ContentTemplate="{DataTemplate views:SettingsView}"/>
+    </FlyoutItem>
+
+
+</Shell>
