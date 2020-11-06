@@ -7,30 +7,6 @@
             xmlns:helpers="clr-namespace:ShellApp.Helpers"       
              x:Class="ShellApp.Views.ShellViewPage">
 
-      <!--  <TabBar>
-            <views:CatsPage Title="People"
-                        IconImageSource="trash.png"/>
-            <views:DogsPage Title="Are"                        
-                        IconImageSource="user.png"/>
-            <views:CatsPage Title="Stupid"                        
-                        IconImageSource="settings.png"/>
-            <views:DogsPage Title="Idiot"                        
-                        IconImageSource="user.png"/>
-        </TabBar>-->
-    <!--<TabBar>
-        <Tab Title="Dog Page" Icon="trash.png">
-            <ShellContent ContentTemplate="{DataTemplate views:DogsPage}"/>
-        </Tab>
-        <Tab Title="Cat Page" Icon="settings.png">
-            <ShellContent ContentTemplate="{DataTemplate views:CatsPage}"/>
-        </Tab>
-    </TabBar>-->
- 
-    <!--<Shell.FlyoutHeaderTemplate>
-        <DataTemplate>
-            <views:HeaderView/>
-        </DataTemplate>
-    </Shell.FlyoutHeaderTemplate>-->
 
     <Shell.FlyoutHeader>
         <views:HeaderView/>
